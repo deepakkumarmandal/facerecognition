@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+.polaroid {
+  width: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+  
+}
+	header
+	{
+		text-align: center ;
+
+	}
+	.radio-toolbar label
+	{
+
+  		font-size: 17px;
+
+  		cursor: pointer;
+	}
+	.panel > .panel-heading
+	{
+		background-image: none;
+    	background-color: #55518a;
+    	border-color: #55518a;
+    	color: white;
+    	text-align: center;
+	}
+	#footer
+	{
+		background-color: #55518a;
+		color:white;
+		float: right;
+	}
+	th,td
+	{
+		text-align: center;
+		width: 20%;
+	}
+	#changebtn
+	{
+		background-color: #FF900C;
+	}
+	table
+	{
+	border:1px solid silver;
+	}
+	aa
+	{
+	background-image:url("image.jpg");
+	}
+
+</style>
+<body>
+<div class="container">
+<div id="finaltab" class="tab-pane">
+    <div align="center">
+        <div class="panel panel-primary polaroid aa">
+            <div class="panel-heading"> Details</div>
+            <div class="panel-body" style="padding-left: 10%;padding-right: 10%;">
+            <div id="messages" class="hide" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div id="messages_content"></div>
+            </div>
+			<div class="container-fluid aa">
+			   <h2 align=center>Personal Details</h2>
+			<div class="row-content " >
+			<div class="col-sm-9 ">
+                <table class="table">
+                        
+                    <tr>
+                        <th>First Name *</th>
+                        <td>
+                            <p id="d1">Deepak</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Middle Name</th>
+                        <td>
+                            <p id="d2">Kumar</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Last Name</th>
+                        <td>
+                            <p id="d3">Mandal</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td>
+                            <p id="d4">Mail</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Biometric ID</th>
+                        <td>
+                            <p id="d6">#23455</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Date of Birth</th>
+                        <td>
+                            <p id="d7">12/05/1997</p>
+                        </td>
+                    </tr>
+					<tr>
+                        <th>Age</th>
+                        <td>
+                            <p id="d7">21</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Mother's Name</th>
+                        <td>
+                            <p id="d9">Madhu Rani Mandal</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Father's Name</th>
+                        <td>
+                            <p id="d10">Ashwani Kumar Mandal</p>
+                        </td>
+                    </tr>
+                </table></div>
+				<div class="col-sm-3" align=center>
+				<div align=center><h3>Profile Image</h3></div>
+				<div style="margin-bottom:200px;">
+				   <img id="m1" src="dpk.jpg" alt="Passport" height=180 width=140 style="border:1px groove ;">
+				  </div>
+				
+				 
+				</div>
+				</div>
+				</div>
+				<div class="row">
+				<div class="col-md-6">
+                <table class="table">
+                    <tr>
+                        <h2> Address</h2></tr>
+                    
+                    <tr>
+                        <th>Address</th>
+                        <td>
+                            <p id="e2">DB-1109 SGcity</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Area and landmark</th>
+                        <td>
+                            <p id="e3">near DAV School</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>City</th>
+                        <td>
+                            <p id="e4">Adityapur-2</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>District*</th>
+                        <td>
+                            <p id="e5">Seraikela-kharsawan</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Pin code</th>
+                        <td>
+                            <p id="e6">831014</p>
+                        </td>
+                    </tr>
+                    
+                        <th>State</th>
+                        <td>
+                            <p id="e9">Jharkhand</p>
+                        </td>
+                    </tr>
+                </table>
+				</div>
+				<div class="col-md-6">
+				<table class="table">
+                    <tr>
+                        <h2>Identification details</h2></tr>
+                    <tr>
+                        <th>Hair colour</th>
+                        <td>
+                            <p id="f1">Black</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Identification Marks </th>
+                        <td>
+                            <p id="f2">wound Scar on forehead</p>
+                        </td>
+                    </tr>
+					<tr>
+                        <th>Eye colour </th>
+                        <td>
+                            <p id="f2">Black</p>
+                        </td>
+                    </tr><tr>
+                        <th>Skin colour </th>
+                        <td>
+                            <p id="f2">Brown</p>
+                        </td>
+                    </tr>
+                    
+                </table>
+				</div>
+				</div>
+                
+                
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
